@@ -1,0 +1,14 @@
+# .gitlab-ci.yml
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+    - echo 'Do nothing'
+  # gitlab page 目錄
+  artifacts:
+    paths:
+      - public
+  # 只有在 main 分支的 public 目錄才會被部署
+  only:
+    - master
