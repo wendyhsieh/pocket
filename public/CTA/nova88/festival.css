@@ -1,0 +1,36 @@
+.login_header_logo {
+  margin: 8px 0;
+  height: 44px;
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_before_en.png?0.74463");
+}
+
+html[lang="zh-TW"] .login_header_logo {
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_before_ch.png?0.05974");
+}
+
+html[lang="zh-CHS"] .login_header_logo,
+html[lang="zh-CN"] .login_header_logo {
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_before_cs.png?0.59246");
+}
+
+html[lang="vi-VN"] .login_header_logo {
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_before_vn.png?0.30536");
+}
+
+[data-core-lobby=true] .c-lobby-logo {
+  width: 110px;
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_after_en.png?0.337");
+}
+
+html[lang="zh-TW"][data-core-lobby=true] .c-lobby-logo {
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_after_ch.png?0.32311");
+}
+
+html[lang="zh-CHS"][data-core-lobby=true] .c-lobby-logo,
+html[lang="zh-CN"][data-core-lobby=true] .c-lobby-logo {
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_after_cs.png?0.86798");
+}
+
+html[lang="vi-VN"][data-core-lobby=true] .c-lobby-logo {
+  background-image: url("images/logo_festival/MidAutumnFestival/logo_after_vn.png?0.2413");
+}

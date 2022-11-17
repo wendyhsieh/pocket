@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>無標題文件</title>
+</head>
+
+<body>
+    <style>
+        #skinMenu {
+            z-index: 1000000;
+            color: rgb(36, 36, 36);
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1040;
+            display: none;
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+            background-color: #fff;
+            animation: opacity .3s forwards;
+        }
+        @keyframes opacity {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        
+        #skinMenu ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-indent: none;
+        }
+        
+        #skinMenu ul:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        #skinMenu ul li {
+            float: left;
+        }
+        
+        #skinMenu .modal-dialog {
+            transform: translate(0, 0);
+            margin: 0;
+        }
+        #skinMenu .modal-content {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            border-radius: 0;
+        }
+        #skinMenu .modal-header, #skinMenu .modal-body {
+            padding: .5rem;
+        }
+        #skinMenu .modal-header {
+            flex: none;
+            background-color: aliceblue;
+        }
+        #skinMenu .modal-body {
+            flex: auto;
+            overflow: auto;
+        }
+        #skinMenu .btn[js-btn-darkmode] {
+            color: white;
+            background-color: #223046;
+        }
+        #skinMenu .btn-primary {
+            color: cornsilk;
+            background-color: cornflowerblue;
+        }
+            
+            /*background-color: #eeeeee;*/
+        }
+        
+        #skinMenu .btn-primary {
+            color: white;
+        }
+        
+    </style>
+    <div id="skinMenu" style="display:none;" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">Select Style:
+                    <div class="btn" js-btn-darkmode>Dark Mode</div>
+                    <div class="btn" js-btn-clearall>Clear All</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                    <!-- 主要關注站台 -->
+                        <li title="nova88"><span class="btn">Nova88</span></li>
+                        <li title="bong88"><span class="btn">bong88</span></li>
+                        <li title="ibcbet"><span class="btn">ibcbet</span></li>
+                        <li title="viva88"><span class="btn">viva88</span></li>
+                        <li title="Keo68"><span class="btn">Keo68</span></li>
+                        <li title="PICA88"><span class="btn">PICA88</span></li>
+<li title="Athena000"><span class="btn">Athena000</span></li>
+<li title="spondemo"><span class="btn">Spondemo</span></li>
+<li title='12bet'><span class='btn'>12bet</span></li>
+<li title="N88"><span class="btn">N88</span></li>
+<li title="ggbook"><span class="btn">ggbook</span></li>
+<li title='Soon88'><span class='btn'>Soon88</span></li>
+
+<!-- 客製化配色 -->
+<li title='_bl001'><span class='btn'>_bl001</span></li>
+<li title='_bl002'><span class='btn'>_bl002</span></li>
+<li title='_bl003'><span class='btn'>_bl003</span></li>
+<li title='_gn001'><span class='btn'>_gn001</span></li>
+<li title='_gn002'><span class='btn'>_gn002</span></li>
+<li title='_og001'><span class='btn'>_og001</span></li>
+<li title='_pp001'><span class='btn'>_pp001</span></li>
+<li title='_rd001'><span class='btn'>_rd001</span></li>
+<li title='_rd002'><span class='btn'>_rd002</span></li>
+<li title='_rd003'><span class='btn'>_rd003</span></li>
+<li title='108bet'><span class='btn'>108bet</span></li>
+<li title='10BET'><span class='btn'>10BET</span></li>
+<li title='18luck'><span class='btn'>18luck</span></li>
+<li title='396Club'><span class='btn'>396Club</span></li>
+<li title='3Star88'><span class='btn'>3Star88</span></li>
+<li title='67Bet'><span class='btn'>67Bet</span></li>
+<li title='9Bet'><span class='btn'>9Bet</span></li>
+<li title='9Club'><span class='btn'>9Club</span></li>
+<li title='Abcasino'><span class='btn'>Abcasino</span></li>
+<li title='AE88'><span class='btn'>AE88</span></li>
+<li title='Alog'><span class='btn'>Alog</span></li>
+<li title='Aoncash'><span class='btn'>Aoncash</span></li>
+<li title='AsiaBet88'><span class='btn'>AsiaBet88</span></li>
+<li title='AsianBet'><span class='btn'>AsianBet</span></li>
+<li title='bbin'><span class='btn'>bbin</span></li>
+<li title='BE7'><span class='btn'>BE7</span></li>
+<li title='BE7TH'><span class='btn'>BE7TH</span></li>
+<li title='Bet678'><span class='btn'>Bet678</span></li>
+<li title='Betdeal'><span class='btn'>Betdeal</span></li>
+<li title='bodog'><span class='btn'>bodog</span></li>
+<li title='Bolanation'><span class='btn'>Bolanation</span></li>
+<li title='Boma365'><span class='btn'>Boma365</span></li>
+<li title='Bossb'><span class='btn'>Bossb</span></li>
+<li title='Bigwiner'><span class='btn'>Bigwiner</span></li>
+<li title='Citybk'><span class='btn'>Citybk</span></li>
+<li title='DF88'><span class='btn'>DF88</span></li>
+<li title='e8casino'><span class='btn'>e8casino</span></li>
+<li title='ECLBET'><span class='btn'>ECLBET</span></li>
+<li title='Empire555'><span class='btn'>Empire555</span></li>
+<li title='ENTAPLAY'><span class='btn'>ENTAPLAY</span></li>
+<li title='eu88'><span class='btn'>eu88</span></li>
+<li title='Fabet'><span class='btn'>Fabet</span></li>
+<li title='FB88'><span class='btn'>FB88</span></li>
+<li title='Fugui'><span class='btn'>Fugui</span></li>
+<li title='fun88'><span class='btn'>fun88</span></li>
+<li title='Goobet'><span class='btn'>Goobet</span></li>
+<li title='Happy1668'><span class='btn'>Happy1668</span></li>
+<li title='Hecbet'><span class='btn'>Hecbet</span></li>
+<li title='HL8'><span class='btn'>HL8</span></li>
+<li title='Honbet'><span class='btn'>Honbet</span></li>
+<li title='iBetAsia'><span class='btn'>iBetAsia</span></li>
+<li title='IBO'><span class='btn'>IBO</span></li>
+<li title='ITCBET'><span class='btn'>ITCBET</span></li>
+<li title='Jumbo88'><span class='btn'>Jumbo88</span></li>
+<li title='K8VN'><span class='btn'>K8VN</span></li>
+<li title='Kasking88'><span class='btn'>Kasking88</span></li>
+<li title='KeenOcean'><span class='btn'>KeenOcean</span></li>
+<li title='King10'><span class='btn'>King10</span></li>
+<li title='Lagadewa'><span class='btn'>Lagadewa</span></li>
+<li title='Leon'><span class='btn'>Leon</span></li>
+<li title='Longbao'><span class='btn'>Longbao</span></li>
+<li title='Lucky88'><span class='btn'>Lucky88</span></li>
+<li title='m88'><span class='btn'>m88</span></li>
+<li title='m8bola'><span class='btn'>m8bola</span></li>
+<li title='Macaubet'><span class='btn'>Macaubet</span></li>
+<li title='MANBETX'><span class='btn'>MANBETX</span></li>
+<li title='May88'><span class='btn'>May88</span></li>
+<li title='Mayayule'><span class='btn'>Mayayule</span></li>
+<li title='Mayfair'><span class='btn'>Mayfair</span></li>
+<li title='MICL'><span class='btn'>MICL</span></li>
+<li title='Monstergol'><span class='btn'>Monstergol</span></li>
+<li title='MrCat'><span class='btn'>MrCat</span></li>
+<li title='N88'><span class='btn'>N88</span></li>
+<li title='NBCbet'><span class='btn'>NBCbet</span></li>
+<li title='Newhonbet'><span class='btn'>Newhonbet</span></li>
+<li title='OLE777'><span class='btn'>OLE777</span></li>
+<li title='Opal88'><span class='btn'>Opal88</span></li>
+<li title='Q8Bola'><span class='btn'>Q8Bola</span></li>
+<li title='Ratugg'><span class='btn'>Ratugg</span></li>
+<li title='SABA789'><span class='btn'>SABA789</span></li>
+<li title='sabademo'><span class='btn'>sabademo</span></li>
+<li title='Salon365'><span class='btn'>Salon365</span></li>
+<li title='sbcbet'><span class='btn'>sbcbet</span></li>
+<li title='Senibet'><span class='btn'>Senibet</span></li>
+<li title='sportsbook'><span class='btn'>sportsbook</span></li>
+<li title='starsoccer'><span class='btn'>starsoccer</span></li>
+<li title='Taipanbet'><span class='btn'>Taipanbet</span></li>
+<li title='TangChao'><span class='btn'>TangChao</span></li>
+<li title='THECLUB'><span class='btn'>THECLUB</span></li>
+<li title='Toobet'><span class='btn'>Toobet</span></li>
+<li title='Unobet'><span class='btn'>Unobet</span></li>
+<li title='VCAsia'><span class='btn'>VCAsia</span></li>
+<li title='VCBA'><span class='btn'>VCBA</span></li>
+<li title='Vwin'><span class='btn'>Vwin</span></li>
+<li title='VWIN66'><span class='btn'>VWIN66</span></li>
+<li title='W88'><span class='btn'>W88</span></li>
+<li title='WBS'><span class='btn'>WBS</span></li>
+<li title='webet88'><span class='btn'>webet88</span></li>
+<li title='Weiwei'><span class='btn'>Weiwei</span></li>
+<li title='WINCLUB88'><span class='btn'>WINCLUB88</span></li>
+<li title='Winn69'><span class='btn'>Winn69</span></li>
+<li title='WKCUR'><span class='btn'>WKCUR</span></li>
+<li title='WKPHIL'><span class='btn'>WKPHIL</span></li>
+<li title='Wuming'><span class='btn'>Wuming</span></li>
+<li title='Zzun88'><span class='btn'>Zzun88</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skinOpen" style="display:none; background-color: transparent;position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: 999999;"></div>
+</body>
+
+</html>

@@ -1,0 +1,788 @@
+@charset "UTF-8";
+/* Remove default margin, padding and border
+   ========================================================================== */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display definitions
+========================================================================== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video,
+ul,
+ol,
+li {
+  display: block;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.woff?v=20190711") format("woff");
+}
+
+.icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-corner-first-1::before {
+  content: "\EA01";
+}
+
+.icon-corner-first::before {
+  content: "\EA02";
+}
+
+.icon-corner-last-1::before {
+  content: "\EA03";
+}
+
+.icon-corner-last::before {
+  content: "\EA04";
+}
+
+.icon-goal-first-1::before {
+  content: "\EA05";
+}
+
+.icon-goal-first-2::before {
+  content: "\EA06";
+}
+
+.icon-goal-first::before {
+  content: "\EA07";
+}
+
+.icon-goal-last-1::before {
+  content: "\EA08";
+}
+
+.icon-goal-last-2::before {
+  content: "\EA09";
+}
+
+.icon-goal-last::before {
+  content: "\EA0A";
+}
+
+.icon-gv-badminton::before {
+  content: "\EA0B";
+}
+
+.icon-gv-baseball::before {
+  content: "\EA0C";
+}
+
+.icon-gv-basketball::before {
+  content: "\EA0D";
+}
+
+.icon-gv-esports::before {
+  content: "\EA0E";
+}
+
+.icon-gv-leave::before {
+  content: "\EA0F";
+}
+
+.icon-gv-tennis::before {
+  content: "\EA10";
+}
+
+.icon-gv::before {
+  content: "\EA11";
+}
+
+.icon-coffee::before {
+  content: "\EA12";
+}
+
+.icon-power-play::before {
+  content: "\EA13";
+}
+
+.icon-rain::before {
+  content: "\EA14";
+}
+
+.icon-red-cross::before {
+  content: "\EA15";
+}
+
+.icon-sport0::before {
+  content: "\EA16";
+}
+
+.icon-sport1::before {
+  content: "\EA17";
+}
+
+.icon-sport161::before {
+  content: "\EA18";
+}
+
+.icon-sport164::before {
+  content: "\EA19";
+}
+
+.icon-sport18::before {
+  content: "\EA1A";
+}
+
+.icon-sport18x::before {
+  content: "\EA1B";
+}
+
+.icon-sport2::before {
+  content: "\EA1C";
+}
+
+.icon-sport4::before {
+  content: "\EA1D";
+}
+
+.icon-sport43::before {
+  content: "\EA1E";
+}
+
+.icon-sport5::before {
+  content: "\EA1F";
+}
+
+.icon-sport52::before {
+  content: "\EA20";
+}
+
+.icon-sport6::before {
+  content: "\EA21";
+}
+
+.icon-sport7::before {
+  content: "\EA22";
+}
+
+.icon-sport8::before {
+  content: "\EA23";
+}
+
+.icon-sport9::before {
+  content: "\EA24";
+}
+
+.icon-account::before {
+  content: "\EA25";
+}
+
+.icon-android::before {
+  content: "\EA26";
+}
+
+.icon-angle-double-end::before {
+  content: "\EA27";
+}
+
+.icon-angle-double::before {
+  content: "\EA28";
+}
+
+.icon-backtotop::before {
+  content: "\EA29";
+}
+
+.icon-calendar::before {
+  content: "\EA2A";
+}
+
+.icon-caret-circle::before {
+  content: "\EA2B";
+}
+
+.icon-caret-triangle::before {
+  content: "\EA2C";
+}
+
+.icon-caret::before {
+  content: "\EA2D";
+}
+
+.icon-caret2-circle::before {
+  content: "\EA2E";
+}
+
+.icon-caret2::before {
+  content: "\EA2F";
+}
+
+.icon-checkbox-on::before {
+  content: "\EA30";
+}
+
+.icon-checkbox::before {
+  content: "\EA31";
+}
+
+.icon-chrome::before {
+  content: "\EA32";
+}
+
+.icon-clear-circle::before {
+  content: "\EA33";
+}
+
+.icon-clear::before {
+  content: "\EA34";
+}
+
+.icon-clear2-circle::before {
+  content: "\EA35";
+}
+
+.icon-clear2::before {
+  content: "\EA36";
+}
+
+.icon-done-circle::before {
+  content: "\EA37";
+}
+
+.icon-done::before {
+  content: "\EA38";
+}
+
+.icon-ethernet::before {
+  content: "\EA39";
+}
+
+.icon-expand::before {
+  content: "\EA3A";
+}
+
+.icon-firefox::before {
+  content: "\EA3B";
+}
+
+.icon-help::before {
+  content: "\EA3C";
+}
+
+.icon-id::before {
+  content: "\EA3D";
+}
+
+.icon-info-circle::before {
+  content: "\EA3E";
+}
+
+.icon-ios::before {
+  content: "\EA3F";
+}
+
+.icon-list::before {
+  content: "\EA40";
+}
+
+.icon-locker::before {
+  content: "\EA41";
+}
+
+.icon-phone::before {
+  content: "\EA42";
+}
+
+.icon-plus-circle::before {
+  content: "\EA43";
+}
+
+.icon-printer::before {
+  content: "\EA44";
+}
+
+.icon-prohibit::before {
+  content: "\EA45";
+}
+
+.icon-puzzle::before {
+  content: "\EA46";
+}
+
+.icon-refresh::before {
+  content: "\EA47";
+}
+
+.icon-refresh2-circle::before {
+  content: "\EA48";
+}
+
+.icon-refresh3-circle::before {
+  content: "\EA49";
+}
+
+.icon-result::before {
+  content: "\EA4A";
+}
+
+.icon-safari::before {
+  content: "\EA4B";
+}
+
+.icon-setting::before {
+  content: "\EA4C";
+}
+
+.icon-speech-bubble::before {
+  content: "\EA4D";
+}
+
+.icon-speed::before {
+  content: "\EA4E";
+}
+
+.icon-star::before {
+  content: "\EA4F";
+}
+
+.icon-streaming::before {
+  content: "\EA50";
+}
+
+.icon-switch::before {
+  content: "\EA51";
+}
+
+.icon-team-uniform::before {
+  content: "\EA52";
+}
+
+.icon-thumb-up::before {
+  content: "\EA53";
+}
+
+.icon-time::before {
+  content: "\EA54";
+}
+
+.icon-timer::before {
+  content: "\EA55";
+}
+
+.icon-tools::before {
+  content: "\EA56";
+}
+
+.icon-trend::before {
+  content: "\EA57";
+}
+
+.icon-trophy::before {
+  content: "\EA58";
+}
+
+.icon-video::before {
+  content: "\EA59";
+}
+
+.icon-warning-circle::before {
+  content: "\EA5A";
+}
+
+.icon-warning::before {
+  content: "\EA5B";
+}
+
+.icon-wifi::before {
+  content: "\EA5C";
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border: 0 solid;
+  border-color: inherit;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-size: 13px;
+  font-family: Arial, Helvetica, SimSun, sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.icon {
+  -webkit-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  position: relative;
+  -webkit-align-self: center;
+          align-self: center;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.btn {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  padding: .125rem .75rem;
+  height: 40px;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn .icon {
+  font-size: 1.75rem;
+}
+
+.static__header {
+  padding: 0 1rem;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.app-dl {
+  padding: 1rem;
+  min-height: 1px;
+}
+
+.app-dl img {
+  display: block;
+  max-width: 100%;
+}
+
+.app-dl__title {
+  margin-bottom: .75rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.app-dl__text {
+  font-size: 15px;
+  line-height: 1.75em;
+}
+
+.app-dl__hero {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-dl__hero {
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+.app-dl__hero .app-dl__img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-dl__hero .app-dl__img {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .app-dl__hero .app-dl__img {
+    margin-left: 3rem;
+    margin-right: 2rem;
+  }
+}
+
+.app-dl__hero .app-dl__intro {
+  -webkit-flex: 1;
+          flex: 1;
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-dl__hero .app-dl__intro {
+    padding-top: 50px;
+  }
+}
+
+.app-dl__hero .app-dl__intro .app-dl__title {
+  font-size: 30px;
+  font-family: Arial, Helvetica, "Microsoft YaHei", "微软雅黑", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+  letter-spacing: 1px;
+}
+
+.app-dl__hero .app-dl__intro .app-dl__text br {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .app-dl__hero .app-dl__intro .app-dl__text br {
+    display: block;
+  }
+}
+
+.app-dl [class^=app-dl__panel] {
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+.app-dl [class^=app-dl__panel] + [class^=app-dl__panel] {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-dl [class^=app-dl__panel] {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+.app-dl__panel-ios .app-dl__download .btn {
+  display: none;
+}
+
+.app-dl__content {
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 1.5rem 1rem;
+}
+
+.app-dl__steps {
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 15px;
+  line-height: 1.75em;
+}
+
+.app-dl__steps li {
+  list-style: inherit;
+  display: list-item;
+}
+
+.app-dl__download {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+          justify-content: center;
+  padding: 0 1rem 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-dl__download {
+    width: 270px;
+    -webkit-align-items: center;
+            align-items: center;
+    padding: 1.5rem 1rem;
+    border-top-width: 0;
+    border-left-width: 1px;
+  }
+}
+
+.app-dl__download .app-dl__text {
+  margin-top: .25rem;
+  -webkit-align-self: center;
+          align-self: center;
+  text-align: center;
+}
+
+.app-dl__download .app-dl__qrcode {
+  width: 120px;
+  min-height: 1px;
+  margin: 0 auto;
+}
+
+.app-dl__download .app-dl__qrcode + .btn {
+  margin-top: 1rem;
+}
+
+.app-dl__download .btn {
+  min-width: 160px;
+}
+
+.app-dl__download .btn .icon + .text {
+  margin-left: .25rem;
+}
+
+body {
+  color: #545454;
+  background-color: #e8eff5;
+}
+
+.static__header {
+  color: white;
+  background-color: #5574a7;
+}
+
+.app-dl [class^=app-dl__panel] {
+  border-color: #cdcdcd;
+  background-color: white;
+}
+
+.btn-primary {
+  color: #FFF;
+  background-color: #F77A00;
+}
+
+.btn-primary img {
+  width: 28px;
+}
+
+.btn-primary img + .text {
+  margin-left: .25rem;
+}
+
+.btn-primary:hover {
+  background-color: #ff8712;
+}
+
+.app-dl__download .app-dl__qrcode {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-dl__download .app-dl__qrcode {
+    display: block;
+  }
+}
+
+.app-dl__panel-ios .app-dl__download .btn {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}

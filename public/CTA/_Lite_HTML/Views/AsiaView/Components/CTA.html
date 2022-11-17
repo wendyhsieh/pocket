@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-version="lite">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Highlight CTA</title>
+    <style>
+        .preloader {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 3rem;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            border-color: #4F6EA0
+        }
+
+        .preloader_spiner {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            position: relative;
+            width: 36px;
+            height: 36px;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+            font-size: 0;
+            border-color: inherit;
+            -webkit-animation: container-rotate 1568ms linear infinite;
+            animation: container-rotate 1568ms linear infinite
+        }
+
+        @-webkit-keyframes container-rotate {
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes container-rotate {
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        .preloader_circles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            border-color: inherit;
+            opacity: 1;
+            -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+            animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both
+        }
+
+        @-webkit-keyframes fill-unfill-rotate {
+            12.5% {
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg)
+            }
+
+            25% {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg)
+            }
+
+            37.5% {
+                -webkit-transform: rotate(405deg);
+                transform: rotate(405deg)
+            }
+
+            50% {
+                -webkit-transform: rotate(540deg);
+                transform: rotate(540deg)
+            }
+
+            62.5% {
+                -webkit-transform: rotate(675deg);
+                transform: rotate(675deg)
+            }
+
+            75% {
+                -webkit-transform: rotate(810deg);
+                transform: rotate(810deg)
+            }
+
+            87.5% {
+                -webkit-transform: rotate(945deg);
+                transform: rotate(945deg)
+            }
+
+            to {
+                -webkit-transform: rotate(1080deg);
+                transform: rotate(1080deg)
+            }
+        }
+
+        @keyframes fill-unfill-rotate {
+            12.5% {
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg)
+            }
+
+            25% {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg)
+            }
+
+            37.5% {
+                -webkit-transform: rotate(405deg);
+                transform: rotate(405deg)
+            }
+
+            50% {
+                -webkit-transform: rotate(540deg);
+                transform: rotate(540deg)
+            }
+
+            62.5% {
+                -webkit-transform: rotate(675deg);
+                transform: rotate(675deg)
+            }
+
+            75% {
+                -webkit-transform: rotate(810deg);
+                transform: rotate(810deg)
+            }
+
+            87.5% {
+                -webkit-transform: rotate(945deg);
+                transform: rotate(945deg)
+            }
+
+            to {
+                -webkit-transform: rotate(1080deg);
+                transform: rotate(1080deg)
+            }
+        }
+
+        .preloader_circle-1,
+        .preloader_circle-2 {
+            display: inline-block;
+            position: relative;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            border-color: inherit
+        }
+
+        .preloader_circle-1::before,
+        .preloader_circle-2::before {
+            content: "";
+            width: 200%;
+            height: 100%;
+            border-width: 3px;
+            border-style: solid;
+            border-color: inherit;
+            border-bottom-color: transparent !important;
+            border-radius: 50%;
+            -webkit-animation: none;
+            animation: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        .preloader_circle-1::before {
+            left: 0;
+            border-right-color: transparent !important;
+            -webkit-transform: rotate(129deg);
+            transform: rotate(129deg);
+            -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+            animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both
+        }
+
+        .preloader_circle-2::before {
+            left: -100%;
+            border-left-color: transparent !important;
+            -webkit-transform: rotate(-129deg);
+            transform: rotate(-129deg);
+            -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+            animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both
+        }
+
+        @-webkit-keyframes left-spin {
+            from {
+                -webkit-transform: rotate(130deg);
+                transform: rotate(130deg)
+            }
+
+            50% {
+                -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg)
+            }
+
+            to {
+                -webkit-transform: rotate(130deg);
+                transform: rotate(130deg)
+            }
+        }
+
+        @keyframes left-spin {
+            from {
+                -webkit-transform: rotate(130deg);
+                transform: rotate(130deg)
+            }
+
+            50% {
+                -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg)
+            }
+
+            to {
+                -webkit-transform: rotate(130deg);
+                transform: rotate(130deg)
+            }
+        }
+
+        @-webkit-keyframes right-spin {
+            from {
+                -webkit-transform: rotate(-130deg);
+                transform: rotate(-130deg)
+            }
+
+            50% {
+                -webkit-transform: rotate(5deg);
+                transform: rotate(5deg)
+            }
+
+            to {
+                -webkit-transform: rotate(-130deg);
+                transform: rotate(-130deg)
+            }
+        }
+
+        @keyframes right-spin {
+            from {
+                -webkit-transform: rotate(-130deg);
+                transform: rotate(-130deg)
+            }
+
+            50% {
+                -webkit-transform: rotate(5deg);
+                transform: rotate(5deg)
+            }
+
+            to {
+                -webkit-transform: rotate(-130deg);
+                transform: rotate(-130deg)
+            }
+        }
+
+        .preloader-mini {
+            padding: 1rem
+        }
+
+        .preloader-mini .preloader_spiner {
+            width: 20px;
+            height: 20px
+        }
+
+        .preloader-mini .preloader_circle-1::before,
+        .preloader-mini .preloader_circle-2::before {
+            border-width: 2px
+        }
+
+        .preloader-full {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0
+        }
+
+        .preloader-light {
+            border-color: #fff
+        }
+
+        .preloader-dark {
+            border-color: rgba(0, 0, 0, 0.75)
+        }
+
+        .btn .preloader {
+            border-color: currentColor
+        }
+    </style>
+    <link href="../../../../Content/nova88/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../../../Content/_global/global-components.css" rel="stylesheet" type="text/css">
+    <link href="../../../../Content/_global/live-chat.css" rel="stylesheet" type="text/css">
+    <link href="../../../../Content/_global/global-lite-core.css" rel="stylesheet" type="text/css">
+    <link href="../../../../Content/nova88/main-lite-core.css" rel="stylesheet" type="text/css">
+    <link href="../../../../../Mobile_NonSports/Content/nova88/main-lite-nonsports.css" rel="stylesheet" type="text/css">
+    <link href="../../../../../Alan_MobileLiteLobby_Core_210325_Global_Components/app/public/SiteSkin/_global/common/css/global-lobby-core.css" rel="stylesheet" type="text/css">
+    <link href="../../../../../MobileLiteLobby_NonSports/app/public/SiteSkin/_global/common/css/global-lobby-nonsports.css" rel="stylesheet" type="text/css">
+    <!-- Promotion -->
+    <link href="../../../../Content/_global-L/Promotion/EuroCupOddsBoost/EuroCupOddsBoost.css" rel="stylesheet">
+
+    <!-- 僅靜態頁面測試用 - CSS -->
+    <link rel="stylesheet" href="../ui-dev.css">
+    <!-- /僅靜態頁面測試用 - CSS -->
+    <script src="../../../../js/jquery.js"></script>
+    <script src="../../../../js/bootstrap.min.js"></script>
+
+
+    <!-- 僅靜態頁面測試用 - JS -->
+    <script src="../../../../js/_global-ch.js"></script>
+    <script src="../../../../js/jquery.cookie.js"></script>
+    <script src="../../../../js/gesture-password.js"></script>
+    <link rel="manifest" href="../../manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            console.log("Will service worker register?");
+            navigator.serviceWorker.register('../../service-worker.js').then(function(reg) {
+                console.log("Yes it did.");
+            }).catch(function(err) {
+                console.log("No it didn't. This happened: ", err)
+            });
+        }
+    </script>
+    <!-- /僅靜態頁面測試用 - JS -->
+
+
+
+    <script src="../../../../js/svga.min.js"></script>
+    <script src="../../../../js/anime.min.js"></script>
+
+    <link rel="stylesheet" href="../UI_Develop/css/ui-dev-global.css">
+
+    <style>
+        .c-gc-cta {}
+
+        .ui {
+            flex-direction: column;
+        }
+    </style>
+    <script>
+        $(function() {
+
+            // Demo CTA 開關
+            if ($(".c-gc-cta").attr("data-open", "true")) {
+
+                // Demo 動畫循環 - setTimeout to loop full animation
+                setTimeout(function() {
+                    $(".c-gc-cta").attr("data-open", "false").attr("data-open", "true");
+
+                }, 10300);
+
+                // anime.js 動畫 Start
+                //---------------------------------------------
+                var tl = anime.timeline({
+                    duration: 600,
+                    loop: true
+                });
+
+                tl
+
+                    // .c-gc-cta__league bg in - 底圖紅色 bg 進場
+                    .add({
+                        targets: ['.c-gc-cta__bg', '.c-gc-cta__league-bg-red', '.c-gc-cta__league-bg-white'],
+                        width: ['100%'],
+                        duration: 900,
+                        delay: 600
+                    })
+
+                    // .c-gc-cta__logo in - Logo 滾動進場
+                    .add({
+                        targets: '.c-gc-cta__saba-logo',
+                        opacity: 1,
+                        duration: 300,
+                        scale: {
+                            value: 1.5,
+                            easing: 'easeInOutQuart'
+                        },
+                        rotate: {
+                            value: 360,
+                            duration: 600,
+                            easing: 'easeInOutSine'
+                        }
+                    }, '-=600')
+
+                    // .c-gc-letter in - League 文字進場
+                    .add({
+                        targets: '.c-gc-text .c-gc-letter',
+                        opacity: [0, 1],
+                        translateX: [30, 0],
+                        easing: "easeOutExpo",
+                        duration: 450,
+                    })
+
+                    // .add({
+                    // targets: '.c-gc-text .c-gc-letter',
+                    // scale: [4,1],
+                    // opacity: [0,1],
+                    // translateZ: 0,
+                    // easing: "easeOutExpo",
+                    // duration: 900,
+                    // delay: (el, i) => 60*i
+                    // })
+
+                    // .c-gc-cta__btn-bg in - 來一注 background
+                    .add({
+                        targets: ['.c-gc-cta__btn-bg-white', '.c-gc-cta__btn-bg-red'],
+                        width: ['100%'],
+                        easing: 'linear',
+                        duration: 150
+                    }, '-=600')
+
+                    // button text show - 來一注 text
+                    .add({
+                        targets: ['.c-gc-cta__btn .c-gc-text', '.c-gc-cta__btn .c-gc-icon'],
+                        opacity: 1,
+                        translateX: [-10, 0],
+                        duration: 600
+                    }, '-=150')
+
+                    // .c-gc-cta__league bg out opacity - league 紅色+白色 bg 淡出
+                    .add({
+                        targets: '.c-gc-cta__league',
+                        //translateX: [0,60],
+                        scaleX: 0,
+                        opacity: 0,
+                        easing: 'linear',
+                        duration: 300,
+                        delay: 3450 // **完整資訊停留時間**
+                    })
+
+                    // .c-gc-cta__league bg out width - 底圖紅色 bg 淡出
+                    .add({
+                        targets: '.c-gc-cta__bg',
+                        width: 0,
+                        opacity: 0,
+                        easing: 'linear',
+                        duration: 300,
+                        endDelay: 2000 // **來一注按鈕停留時間**
+                    }, '-=300')
+
+                    // .c-gc-cta__btn out - 文字 淡出
+                    .add({
+                        targets: ['.c-gc-cta__btn .c-gc-text', '.c-gc-cta__btn .c-gc-icon'],
+                        opacity: 0,
+                        translateX: [0, 20],
+                        duration: 150
+                    })
+
+                    // .c-gc-cta__btn out - 來一注 淡出
+                    .add({
+                        targets: ['.c-gc-cta__btn-bg-white', '.c-gc-cta__btn-bg-red'],
+                        width: 0,
+                        //opacity: 0,
+                        easing: 'linear',
+                        duration: 150,
+                        endDelay: 2000
+                    }, '-=150')
+
+                // arrow translate loop - 來一注 箭頭 來回移動
+                anime({
+                    targets: '.c-gc-icon--caret-right',
+                    duration: 300,
+                    translateX: [3, 0],
+                    easing: 'linear',
+                    direction: 'alternate',
+                    loop: true
+                });
+
+                //---------------------------------------------
+                // anime.js 動畫 End
+
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="ui">
+        <div class="ui_block">
+            <div class="ui_title">Highlight CTA</div>
+            <div class="ui_tmpl">
+
+                <div class="c-gc-cta" data-open="true">
+                    <div class="c-gc-cta__league">
+                        <div class="c-gc-cta__saba-logo"></div>
+                        <div class="c-gc-text">
+                            <span class="c-gc-letter">英格蘭超級聯賽</span>
+                            <!-- <span class="c-gc-letter">英</span>
+                            <span class="c-gc-letter">格</span>
+                            <span class="c-gc-letter">蘭</span>
+                            <span class="c-gc-letter">超</span>
+                            <span class="c-gc-letter">級</span>
+                            <span class="c-gc-letter">聯</span>
+                            <span class="c-gc-letter">賽</span> -->
+                        </div>
+                        <div class="c-gc-cta__league-bg-white"></div>
+                        <div class="c-gc-cta__league-bg-red"></div>
+                    </div>
+                    <div class="c-gc-cta__btn">
+                        <div class="c-gc-text">來一注</div>
+                        <i class="c-gc-icon c-gc-icon--caret-right"></i>
+                        <div class="c-gc-cta__btn-bg-white"></div>
+                        <div class="c-gc-cta__btn-bg-red"></div>
+                    </div>
+                    <div class="c-gc-cta__bg"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

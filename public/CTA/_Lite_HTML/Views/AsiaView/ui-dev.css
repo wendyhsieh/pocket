@@ -1,0 +1,31 @@
+.ui {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .ui_block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
+    padding: 10px;
+    min-width: 200px; }
+  .ui_title {
+    font-size: 12px; }
+  .ui_tmpl {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative; }
+    .ui_tmpl .tooltips {
+      width: auto;
+      position: relative;
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    .ui_tmpl > div {
+      position: relative;
+      bottom: 0 !important; }
+    .ui_tmpl .appbar .tooltips {
+      width: auto;
+      position: absolute;
+      -webkit-transform: translate(0, -100%);
+              transform: translate(0, -100%); }
